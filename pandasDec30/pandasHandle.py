@@ -13,10 +13,15 @@ df = pd.DataFrame({
 
 # print(df['Age'])
 
-# ages = pd.Series([22,56,89],name="Age")
+ages = pd.Series([22,56,89],name="Age")
 
+# print(ages.max())
 # print(ages)
 
 ##--I want to know the maximum Age of the passengers
 
 print(df["Age"].max())
+
+###...I’m interested in some basic statistics of the numerical data of my data table
+print(ages.describe())
+print(ages.mean())
